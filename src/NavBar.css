@@ -1,0 +1,45 @@
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px;
+    background: linear-gradient(to right, rgba(78, 128, 175, 0.8), rgba(171, 65, 122, 0.8)); /* Replace with your desired gradient colors */
+    backdrop-filter: blur(10px);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    color: #fff;
+    z-index: 999;
+  }
+  
+  .navbar-logo {
+    font-size: 1.5rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+  }
+  
+  .navbar-links {
+    display: flex;
+  }
+  
+  .navbar-link-item {
+    margin-right: 1.5rem;
+  }
+  
+  .navbar-link {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .navbar-link:hover {
+    color: #F6D77D;
+  }
+  
+  /* Add additional styles if needed for content below the fixed navbar */
+  body {
+    margin-top: 80px; /* Adjust this value to match the navbar height */
+  }
+  

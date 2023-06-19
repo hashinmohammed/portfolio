@@ -1,0 +1,32 @@
+.overlay {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    backdrop-filter: blur(50px);
+    background-color: rgba(255, 255, 255, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .overlay-text {
+    font-family: 'CabinetGrotesk-Extrabold', sans-serif;
+    font-size: 48px;
+    font-weight: bold;
+    color: #242A54;
+    overflow: hidden; /* Hide overflowing characters */
+    animation: fadeIn 1s ease-in-out;
+  }
+  
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
