@@ -7,7 +7,7 @@
     justify-content: space-between;
     align-items: center;
     padding: 16px;
-    background: linear-gradient(to right, rgba(78, 128, 175, 0.8), rgba(171, 65, 122, 0.8)); /* Replace with your desired gradient colors */
+    background: linear-gradient(to right, #2980b9, #6ab1d7, #78d7ea, #89ecd3, #a9e6ae, #c7db96); /* Gradient with six colors */
     backdrop-filter: blur(10px);
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     color: #fff;
@@ -35,7 +35,7 @@
   }
   
   .navbar-link:hover {
-    color: #F6D77D;
+    color: #f6c877; /* Light yellow */
   }
   
   /* Add additional styles if needed for content below the fixed navbar */

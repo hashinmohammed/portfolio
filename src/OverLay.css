@@ -5,11 +5,28 @@
     left: 0;
     width: 100vw;
     height: 100vh;
-    backdrop-filter: blur(50px);
+    backdrop-filter: blur(40px);
     background-color: rgba(255, 255, 255, 0.8);
     display: flex;
     align-items: center;
     justify-content: center;
+  }
+  
+  .left-content {
+    display: flex;
+    align-items: center;
+  }
+  
+  .my-image {
+    width: 100%; /* Take the full height of the overlay container */
+    height: auto; /* Preserve aspect ratio */
+    max-height: 100vh; /* Limit the height to the overlay container */
+  }
+  
+  .text-container {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
   }
   
   .overlay-text {
@@ -21,12 +38,45 @@
     animation: fadeIn 1s ease-in-out;
   }
   
-  @keyframes fadeIn {
-    0% {
-      opacity: 0;
-    }
-    100% {
-      opacity: 1;
-    }
+  .description {
+    font-size: 24px; /* Adjust the font size as needed */
+    color: #242A54;
+    margin-top: 10px;
   }
   
+  .about-me {
+    font-size: 16px; /* Adjust the font size as needed */
+    color: #242A54;
+    margin-top: 20px;
+    max-width: 500px;
+  }
+  
+  .buttons {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap; /* Allow buttons to wrap when the width is too small */
+  }
+  
+  .button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    margin-right: 10px;
+    margin-bottom: 10px; /* Add margin between buttons */
+    border: none;
+    border-radius: 4px;
+    background-color: #242A54;
+    color: #FFFFFF;
+    font-size: 14px;
+    transition: background-color 0.3s ease-in-out;
+    cursor: pointer;
+  }
+  
+  .button i {
+    margin-right: 5px;
+  }
+  
+  .button:hover {
+    background-color: #1E2245;
+  }
