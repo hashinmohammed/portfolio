@@ -1,6 +1,6 @@
 import React from 'react';
 import '../src/Overlay.css';
-import myImage from '../src/assets/myImage.png';
+import myImage from '../src/assets/dfddf.png';
 import { overlayData,buttonsData } from './utils/OverlayDatas';
 const Overlay = () => {
   

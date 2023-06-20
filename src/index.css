@@ -24,14 +24,16 @@ body{
 }
 
 .bubbles-container {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: -1;
-}
-
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background: linear-gradient(to bottom, #FF4136, #FF851B, #FFDC00, #2ECC40); /* Replace the color values as needed */
+  }
+  
+  
 .bubble {
   position: absolute;
   border-radius: 50%;
