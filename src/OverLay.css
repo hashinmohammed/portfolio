@@ -31,7 +31,7 @@
   
   .overlay-text {
     font-family: 'CabinetGrotesk-Extrabold', sans-serif;
-    font-size: 48px;
+    font-size: 5rem;
     font-weight: bold;
     color: #242A54;
     overflow: hidden; /* Hide overflowing characters */
@@ -39,13 +39,13 @@
   }
   
   .description {
-    font-size: 24px; /* Adjust the font size as needed */
+    font-size: 48px; /* Adjust the font size as needed */
     color: #242A54;
     margin-top: 10px;
   }
   
   .about-me {
-    font-size: 16px; /* Adjust the font size as needed */
+    font-size: 18px; /* Adjust the font size as needed */
     color: #242A54;
     margin-top: 20px;
     max-width: 500px;

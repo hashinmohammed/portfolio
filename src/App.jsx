@@ -5,6 +5,7 @@ import './App.css'
 import BubbleScreensaver from './BubbleScreenSaver';
 import Navbar from './NavBar';
 import VideoContainer from './VideoContainer';
+import GalleryComponent from './Gallery';
 
 
 
@@ -16,6 +17,7 @@ function App() {
     <Navbar />
     <BubbleScreensaver />
     <VideoContainer />
+    <GalleryComponent />
    
     </>
   )
