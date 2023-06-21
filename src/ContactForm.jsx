@@ -39,12 +39,12 @@ const ContactForm = () => {
 
   return (
     <section className="contact-section">
-      <h1>Connect with me</h1>
-      <div className="contact-form-container">
+      <h1 data-aos="zoom-out-right">Connect with me</h1>
+      <div className="contact-form-container" data-aos="flip-left">
         <div className="form-image">
           <img src='https://t4.ftcdn.net/jpg/06/00/82/29/360_F_600822946_7sDOl003Oo4gzJqG3pHxLkCNnzQBqdsu.jpg' />
         </div>
-        <div className="form-content">
+        <div className="form-content" >
           <form onSubmit={handleSubmit}>
             <div className="form-field">
               <label htmlFor="firstName">First Name:</label>

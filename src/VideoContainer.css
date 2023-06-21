@@ -87,15 +87,18 @@
   }
   
   .card:nth-child(1) {
-    background-color: #ffc947;
+    background: linear-gradient(45deg, #ffc947, #e2ef7c);
+    /* Rest of the CSS properties */
   }
   
   .card:nth-child(2) {
-    background-color: #50c3df;
+    background: linear-gradient(45deg, #50c3df, #6fe7d7);
+    /* Rest of the CSS properties */
   }
   
   .card:nth-child(3) {
-    background-color: #f66d6a;
+    background: linear-gradient(45deg, #f66d6a, #aa8ff2);
+    /* Rest of the CSS properties */
   }
   
   .card h2,

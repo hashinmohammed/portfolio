@@ -34,7 +34,7 @@ const Testimonials = () => {
 
   return (
     <section className="slider-section"> {/* Added slider-section class */}
-          <h1 className="section-heading">Testimonials</h1> {/* Added section-heading class */}
+          <h1 className="section-heading" data-aos="zoom-out-left">Testimonials</h1> {/* Added section-heading class */}
 
       <div className="slider-container">
         {people.map((person, personIndex) => {

@@ -1,11 +1,15 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './VideoContainer.css';
 import video from './assets/video.mp4';
 import { cardData } from './utils/CardData';
 
-
+import Aos from 'aos';
+import 'aos/dist/aos.css'
 
 const VideoContainer = () => {
+  useEffect(()=>{
+    Aos.init()
+  },[])
   return (
     <div className="video-container">
       <div className="blurred-overlay" />
@@ -18,7 +22,7 @@ const VideoContainer = () => {
 
         {cardData.map((item, index) => (
             
-          <div className="card" key={index}>
+          <div className="card" data-aos="zoom-in" key={index}>
             <h2>{item.name}</h2>
             <div>{item.icon}</div>
             
