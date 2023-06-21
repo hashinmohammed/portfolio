@@ -2,6 +2,7 @@ import React, { useEffect, useState, useCallback } from 'react';
 import './index.css';
 import Overlay from './OverLay';
 
+
 const BubbleScreensaver = () => {
   const [bubbles, setBubbles] = useState([]);
 
@@ -59,7 +60,7 @@ const BubbleScreensaver = () => {
   }, [createBubble]);
 
   return (
-    <div className="container">
+    <div id='home' className="container">
       <div className="bubbles-container">
         {bubbles.map((bubble) => (
           <div

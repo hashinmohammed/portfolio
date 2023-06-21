@@ -20,14 +20,16 @@ function App() {
     <> 
     <Navbar />
     <BubbleScreensaver />
-    <GalleryComponent />
     <Technologies />
 
 
     <VideoContainer />
+    <GalleryComponent />
+
 
     <Testimonial />
     <ContactForm />
+
     <Footer />
    
     </>

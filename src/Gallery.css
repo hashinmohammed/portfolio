@@ -41,7 +41,7 @@
      /* padding: 12px; */
   }
   .image-grid::-webkit-scrollbar {
-    width: 0.8rem;
+    width: 0.4rem;
     background-color: transparent;
   }
   
@@ -52,7 +52,7 @@
   
   /* Handle */
   .image-grid::-webkit-scrollbar-thumb {
-    background-color: #242a54ae;
+    background-color: #59A3CE;
     border-radius: 10px;
   }
   

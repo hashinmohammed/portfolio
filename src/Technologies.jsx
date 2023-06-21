@@ -9,7 +9,7 @@ const Technologies = () => {
       {/* <h6 className="technologies-heading">Technologies I know</h6> */}
       <div className="logo-container">
         {technologies.map((tech, index) => (
-          <div className="logo-item" key={index}>
+          <div className="logo-item" data-aos="flip-down" key={index}>
             <img src={tech.logo} alt={`Logo ${index + 1}`} className="logo-image" />
             <h3 className="logo-heading">{tech.name}</h3>
           </div>

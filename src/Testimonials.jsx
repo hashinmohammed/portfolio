@@ -33,7 +33,7 @@ const Testimonials = () => {
   }, [currentPerson]);
 
   return (
-    <section className="slider-section"> {/* Added slider-section class */}
+    <section id="testimonials" className="slider-section"> {/* Added slider-section class */}
           <h1 className="section-heading" data-aos="zoom-out-left">Testimonials</h1> {/* Added section-heading class */}
 
       <div className="slider-container">

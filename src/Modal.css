@@ -1,0 +1,75 @@
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 100;
+  }
+  
+  .modal-content {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    max-width: 400px;
+    text-align: center;
+    position: relative;
+  }
+  
+  .close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    font-size: 20px;
+    color: #555;
+    padding: 1px;
+    /* background-color: red; */
+    border-radius: 50%;
+  }
+  
+  .close:hover {
+    color: #333;
+  }
+  
+  .icon-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+  
+  .thumbs-up-icon {
+    font-size: 48px;
+    color: #4caf50;
+  }
+  
+  .modal-text {
+    font-size: 24px; /* Increase the font size */
+    margin-bottom: 20px;
+    /* font-weight: bold; Add bold style */
+    color: #333333a6; /* Change the text color */
+    text-align: center; /* Center align the text */
+    padding: 0 20px; /* Add some padding to the sides */
+    line-height: 1.5; /* Adjust the line height for better readability */
+  }
+  
+  
+  .ok-btn {
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .ok-btn:hover {
+    background-color: #45a049;
+  }
+  

@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import './VideoContainer.css';
-import video from './assets/video.mp4';
+import video from '../src/assets/video.mp4';
 import { cardData } from './utils/CardData';
 
 import Aos from 'aos';
@@ -22,7 +22,7 @@ const VideoContainer = () => {
 
         {cardData.map((item, index) => (
             
-          <div className="card" data-aos="zoom-in" key={index}>
+          <div className="card" data-aos={item.aos} key={index}>
             <h2>{item.name}</h2>
             <div>{item.icon}</div>
             

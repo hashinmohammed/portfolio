@@ -7,12 +7,12 @@ const GalleryComponent = () => {
   
 
   return (
-    <div className="gallery-container">
+    <div id='works' className="gallery-container">
     <h1 className="gallery-heading" data-aos="fade-left">Recent works</h1>
-    <div className="image-grid" data-aos="flip-up">
+    <div className="image-grid" >
       {images.map((image) => (
         <Link key={image.id} to={image.link} target="_blank">
-            <div className='image-div'>
+            <div className='image-div' data-aos="zoom-in">
             <img
             src={image.src}
             alt={image.alt}

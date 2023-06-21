@@ -54,29 +54,76 @@
   .buttons {
     margin-top: 20px;
     display: flex;
-    flex-wrap: wrap; /* Allow buttons to wrap when the width is too small */
+    flex-wrap: wrap; 
+    /* Allow buttons to wrap when the width is too small */
+    
   }
   
   .button {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 10px 20px;
-    margin-right: 10px;
-    margin-bottom: 10px; /* Add margin between buttons */
     border: none;
     border-radius: 4px;
-    background-color: #242A54;
-    color: #FFFFFF;
-    font-size: 14px;
+    font-size: 32px;
     transition: background-color 0.3s ease-in-out;
     cursor: pointer;
+    width: 50px;
+    height: 50px;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff9f;
+    color: #242A54;
+    margin: 5px; /* Add margin to create space between buttons */
   }
+  
   
   .button i {
     margin-right: 5px;
   }
   
   .button:hover {
-    background-color: #1E2245;
+    /* Change the text color to white */
+    color: #ffffff;
+  
+    /* Change the background color to match the first button */
+    background-color: #242A54;
   }
+  .button-round {
+    border-radius: 50%;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+  }
+  
+  .button-round i {
+    color: #242a54;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  .button-round:hover {
+    background-color: #242a54;
+  }
+  
+  .button-round:hover i {
+    color: #fff;
+  }
+  .contact-me {
+    outline: none;
+    background-color: #242a54;
+    border-radius: 24px;
+    padding: 0 24px;
+    color: white;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 16px;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin: 5px;
+    /* Add the backdrop blur effect */
+  }
+  .contact-me:hover {
+    scale :1.1;
+  }
+  
+ 

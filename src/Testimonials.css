@@ -10,9 +10,10 @@
   }
   
   .section-heading {
-    font-size: 4rem;
+    font-size: 5rem;
     color: #242A54; /* Replace with desired text color */
     text-align: center; /* Align the heading to the center */
+    margin-top: 4rem;
     margin-bottom: 2rem; /* Adjust the margin as needed */
   }
   

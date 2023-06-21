@@ -2,21 +2,25 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import './Footer.css';
 
-import { socialMediaLinks,address,contactDetails } from './utils/FooterDatas';
+import { socialMediaLinks, address, contactDetails } from './utils/FooterDatas';
+import { nanoid } from 'nanoid';
 
 const Footer = () => {
   return (
     <footer className="footer">
       <div className="column">
-        <img src="/path/to/logo.png" alt="Logo" className="logo" />
+        {/* <img src="../src/assets/hashin-logo.svg" alt="Logo" className="logo" /> */}
         {address.map((line) => (
-          <p key={line.id}>{line.line}</p>
+          <div key={nanoid()}> {/* Assigning a unique key to the div */}
+            <p>{line.line}</p>
+          </div>
         ))}
+        <p>{`Copyright © ${new Date().getFullYear()}`}</p>
       </div>
       <div className="column">
         <h3>Get in Touch</h3>
         {contactDetails.map((detail) => (
-          <p key={detail.id}>
+          <p key={nanoid()}>
             {detail.label}: {detail.value}
           </p>
         ))}
@@ -25,7 +29,7 @@ const Footer = () => {
         <h3>Follow Me</h3>
         <div className="social-icons">
           {socialMediaLinks.map((link) => (
-            <Link to={link.url} key={link.id}>
+            <Link to={link.url} key={nanoid()}>
               {link.icon}
             </Link>
           ))}

@@ -4,8 +4,10 @@
     background: linear-gradient(to right, rgba(41, 128, 185, 0.9), rgba(106, 177, 215, 0.9), rgba(120, 215, 234, 0.9), rgba(137, 236, 211, 0.9), rgba(169, 230, 174, 0.9), rgba(199, 219, 150, 0.9));
     color: #fff;
     padding: 40px;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    margin-top: 64px;
+    
   }
   
   
@@ -41,16 +43,9 @@
   }
   
   p {
-    margin-bottom: 8px;
+    margin-bottom: 12px;
   }
+ 
   
-  .footer-link {
-    color: #fff;
-    text-decoration: none;
-    margin-bottom: 8px;
-  }
-  
-  .footer-link:hover {
-    text-decoration: underline;
-  }
+ 
   
