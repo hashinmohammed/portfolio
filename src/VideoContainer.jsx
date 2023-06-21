@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import './VideoContainer.css';
-import video from '../src/assets/video.mp4';
+import video from '../public/assets/video.mp4';
 import { cardData } from './utils/CardData';
 
 import Aos from 'aos';

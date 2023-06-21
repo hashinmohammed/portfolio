@@ -1,6 +1,6 @@
 import React from "react";
 import "../src/Overlay.css";
-import myImage from "../src/assets/my-image.png";
+import myImage from "../public/assets/my-image.png";
 import { overlayData, buttonsData } from "./utils/OverlayDatas";
 import {
   FaInstagram,
