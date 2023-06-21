@@ -115,4 +115,44 @@
     color: #ffffff;
   }
   
+  @media screen and (max-width: 768px) {
+    .video-container {
+      position: relative;
+      height: 70vh;
+      width: 100%;
+      overflow: hidden;
+    }
+
+    .cards-container {
+      display: flex;
+      overflow-y: scroll;
+      /* flex-direction: column; */
+    }
+  
+    .card {
+      width: 320px;
+      max-width: 400px;
+      height: 400px;
+    }
+  
+    .card:first-child {
+      display: none;
+    }
+  
+    .card:nth-child(2) {
+            display: none;
+
+    }
+  
+    .card h2 {
+      font-size: 20px;
+      margin-top: 30px;
+    }
+  
+   
+  
+    .section-header h1 {
+      font-size: 24px;
+    }
+  }
   

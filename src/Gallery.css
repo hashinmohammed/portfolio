@@ -84,3 +84,45 @@
     transform: scale(1.1);
   }
   
+
+  @media screen and (max-width: 600px) {
+    .gallery-container {
+      width: 100vw;
+      height: 70vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      background-image: url('https://blusignalsystems.com/wp-content/uploads/2016/12/Savin-NY-Website-Background-Web1.jpg');
+      background-size: cover;
+      background-position: center;
+      position: relative;
+      overflow: hidden;
+    }
+    .gallery-heading {
+      font-size: 2rem;
+      margin-bottom: 10px;
+    }
+    .image-grid {
+      display: grid; /* Use grid layout to create two columns */
+      grid-template-columns: repeat(2, 1fr); /* Display two columns */
+      gap: 10px;
+      overflow-x: auto; /* Enable horizontal scroll */
+      padding-bottom: 10px; /* Add some bottom padding to prevent horizontal scrollbar from overlaying content */
+    }
+    
+    .image-grid::-webkit-scrollbar {
+      width: 0.3rem;
+    }
+    
+    .image-div {
+      box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+    }
+    
+    .gallery-image {
+      width: 100%; /* Adjust the width of each image as needed */
+      height: auto;
+    }
+  
+  }
+  

@@ -20,7 +20,7 @@ const Footer = () => {
       <div className="column">
         <h3>Get in Touch</h3>
         {contactDetails.map((detail) => (
-          <p key={nanoid()}>
+          <p className='not-needed-in-media' key={nanoid()}>
             {detail.label}: {detail.value}
           </p>
         ))}
