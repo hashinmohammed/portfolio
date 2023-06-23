@@ -165,10 +165,7 @@
       font-size: 0.9rem;
     }
     
-    .text:before,
-    .text:after {
-      font-size: 1rem;
-    }
+   
     
     .icon {
       font-size: 1rem;
@@ -189,6 +186,10 @@
     .text:after {
   display: none;
     }
+     
+  .icon {
+   display: none;/* Replace with desired icon color */
+  }
   }
   
   /* Additional media queries can be added for other screen sizes if needed */

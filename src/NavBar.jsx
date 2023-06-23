@@ -3,30 +3,28 @@ import './Navbar.css';
 import Tooltip from '@mui/material/Tooltip';
 
 const Navbar = () => {
+  const navbarLinks = [
+    { title: 'Home', href: '#home', tooltip: 'Go to Home Page' },
+    { title: 'Projects', href: '#works', tooltip: 'View My Projects' },
+    { title: 'Testimonials', href: '#testimonials', tooltip: 'Read Client Testimonials' },
+    { title: 'Contact', href: '#contact', tooltip: 'Contact Me' },
+  ];
+
   return (
     <nav className="navbar">
-      <div className="navbar-logo">ha<span style={{color:"yellowgreen",fontSize:'2rem'}}>sh</span>in</div>
+      <div className="navbar-logo">
+        ha<span style={{ color: 'yellowgreen', fontSize: '2rem' }}>sh</span>in
+      </div>
       <ul className="navbar-links">
-        <li className="navbar-link-item">
-          <Tooltip title="Go to Home Page" arrow>
-            <a href="#home" className="navbar-link">Home</a>
-          </Tooltip>
-        </li>
-        <li className="navbar-link-item">
-          <Tooltip title="View My Projects" arrow>
-            <a href="#works" className="navbar-link">Projects</a>
-          </Tooltip>
-        </li>
-        <li className="navbar-link-item">
-          <Tooltip title="Read Client Testimonials" arrow>
-            <a href="#testimonials" className="navbar-link">Testimonials</a>
-          </Tooltip>
-        </li>
-        <li className="navbar-link-item">
-          <Tooltip title="Contact Me" arrow>
-            <a href="#contact" className="navbar-link">Contact</a>
-          </Tooltip>
-        </li>
+        {navbarLinks.map((link, index) => (
+          <li className="navbar-link-item" key={index}>
+            <Tooltip title={link.tooltip} arrow>
+              <a href={link.href} className="navbar-link">
+                {link.title}
+              </a>
+            </Tooltip>
+          </li>
+        ))}
       </ul>
     </nav>
   );

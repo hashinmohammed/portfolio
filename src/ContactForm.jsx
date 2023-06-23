@@ -63,7 +63,7 @@ const ContactForm = () => {
           <img src='https://t4.ftcdn.net/jpg/06/00/82/29/360_F_600822946_7sDOl003Oo4gzJqG3pHxLkCNnzQBqdsu.jpg' />
         </div>
         <div className="form-content" >
-          <form onSubmit={handleSubmit}>
+          <form className='form-last' onSubmit={handleSubmit}>
             <div className="form-field">
               <label htmlFor="firstName">First Name:</label>
               <input

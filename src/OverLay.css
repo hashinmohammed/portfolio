@@ -35,7 +35,7 @@
     font-weight: bold;
     color: #242A54;
     overflow: hidden; /* Hide overflowing characters */
-    animation: fadeIn 1s ease-in-out;
+
   }
   
   .description {
@@ -126,4 +126,114 @@
     scale :1.1;
   }
   
- 
+  @media screen and (max-width: 768px) {
+    .overlay {
+      position: absolute;
+      z-index: 1;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 70vh;
+      backdrop-filter: blur(5px);
+      background-color: rgba(255, 255, 255, 0.8);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    .left-content {
+      display: flex;
+      /* align-items: center; */
+    }
+    
+      
+  .about-me {
+    display:none;
+  }
+    
+  .my-image {
+    width: 90%; /* Take the full height of the overlay container */
+    height: auto; /* Preserve aspect ratio */
+    max-height: 100vh; /* Limit the height to the overlay container */
+  }
+   
+  .overlay-text {
+    font-family: 'CabinetGrotesk-Extrabold', sans-serif;
+    font-size: 3rem;
+    font-weight: bold;
+    color: #242A54;
+    overflow: hidden; /* Hide overflowing characters */
+
+  }
+  .description {
+    font-size: 2rem; /* Adjust the font size as needed */
+    color: #242A54;
+    margin-top: 10px;
+  }
+  .button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    transition: background-color 0.3s ease-in-out;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff9f;
+    color: #242A54;
+    margin: 5px; /* Add margin to create space between buttons */
+  }
+  
+  
+  .button i {
+    margin-right: 3px;
+  }
+  
+  .button:hover {
+    /* Change the text color to white */
+    color: #ffffff;
+  
+    /* Change the background color to match the first button */
+    background-color: #242A54;
+  }
+  .button-round {
+    border-radius: 50%;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+  }
+  
+  .button-round i {
+    color: #242a54;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  .button-round:hover {
+    background-color: #242a54;
+  }
+  
+  .button-round:hover i {
+    color: #fff;
+  }
+  .contact-me {
+    outline: none;
+    background-color: #242a54;
+    border-radius: 24px;
+    padding: 0 12px;
+    color: white;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 12px;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin: 3px;
+    /* Add the backdrop blur effect */
+  }
+
+  
+  }
+  

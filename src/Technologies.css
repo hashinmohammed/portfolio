@@ -33,4 +33,23 @@
     margin-top: 5px;
     font-size: 14px;
   }
+  @media screen and (max-width: 768px) {
+    .logo-container {
+      
+      gap: 4px;
+    }
+  
+    .logo-item {
+      margin: 5px;
+    }
+  
+    .logo-image {
+      width: 20px;
+      height: 20px;
+    }
+  
+    .logo-heading {
+      font-size: 12px;
+    }
+  }
   
