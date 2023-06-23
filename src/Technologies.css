@@ -17,6 +17,9 @@
     text-align: center;
     margin: 10px;
   }
+  .logo-item:hover{
+    scale:1.1;
+  }
   
   .logo-image {
     width: 40px;
@@ -24,6 +27,7 @@
     object-fit: contain;
     /* filter: saturate(0%); */
   }
+  
   
   .logo-heading {
     margin-top: 5px;

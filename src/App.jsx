@@ -12,7 +12,6 @@ import Footer from './Footer';
 import ContactForm from './ContactForm';
 
 
-
 function App() {
   
   
@@ -31,6 +30,7 @@ function App() {
     <ContactForm />
 
     <Footer />
+
    
     </>
   )

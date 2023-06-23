@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "../src/Overlay.css";
 import myImage from "../public/assets/my-image.png";
 import { overlayData, buttonsData } from "./utils/OverlayDatas";
@@ -9,14 +9,23 @@ import {
   FaFacebook,
 } from "react-icons/fa";
 import { nanoid } from "nanoid";
+import Tooltip from "@mui/material/Tooltip";
 
 const Overlay = () => {
-  
+  const [tooltipText, setTooltipText] = useState(""); // State to store the tooltip text
+
   const handleCallButtonClick = () => {
     const phoneNumber = "+919947418405"; // Replace with your phone number
     window.location.href = `tel:${phoneNumber}`;
   };
 
+  const handleButtonMouseEnter = (text) => {
+    setTooltipText(text); // Update the tooltip text on button mouse enter
+  };
+
+  const handleButtonMouseLeave = () => {
+    setTooltipText(""); // Clear the tooltip text on button mouse leave
+  };
 
   const handleButtonRedirect = (url) => {
     // Open the respective link in a new tab/window
@@ -41,13 +50,20 @@ const Overlay = () => {
               <i className="fas fa-icon"></i> {buttonsData[0].text}
             </button>
             {buttonsData.slice(1).map((button) => (
-              <button
-                className="button button-round"
+              <Tooltip
                 key={button.id}
-                onClick={() => handleButtonRedirect(button.url)}
+                title={tooltipText} // Set the tooltip text from state
+                arrow
               >
-                {renderButtonIcon(button.icon)}
-              </button>
+                <button
+                  className="button button-round"
+                  onMouseEnter={() => handleButtonMouseEnter(button.tooltip)}
+                  onMouseLeave={handleButtonMouseLeave}
+                  onClick={() => handleButtonRedirect(button.url)}
+                >
+                  {renderButtonIcon(button.icon)}
+                </button>
+              </Tooltip>
             ))}
           </div>
         </div>
