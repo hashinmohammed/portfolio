@@ -113,7 +113,7 @@ const GalleryComponent = () => {
                 onClick={handleViewSourceCode}
                 disabled={images[currentImageIndex].sourceCodeUrl === ''}
               >
-                Source Code
+                &lt;Source Code&gt;
               </button>
             </div>
           </div>

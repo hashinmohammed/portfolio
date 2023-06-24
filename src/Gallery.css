@@ -102,10 +102,10 @@
 }
 
 .lightbox-close {
-  position: absolute;
-  top: 20px;
-  right: 20px;
-  background-color: rgba(0, 0, 0, 0.367);
+  position: fixed;
+  top: 36px; /* Adjust the top position as needed */
+  right: 16px; /* Adjust the right position as needed */
+  background-color: rgba(225, 201, 201, 0.367);
   border: none;
   outline: none;
   cursor: pointer;
@@ -115,6 +115,7 @@
   padding: 4px;
   z-index: 2;
 }
+
 
 .lightbox-prev,
 .lightbox-next {
@@ -156,14 +157,15 @@
 }
 
 .lightbox-button {
-  background-color: #59a3ce;
+  background-color: #88f088;
+  background-image: linear-gradient(to bottom right, #88f088, #3bc3a3);
   color: white;
   border: none;
   outline: none;
   cursor: pointer;
   padding: 8px 16px;
   margin: 0 10px;
-  font-size: 16px;
+  font-size: 12px;
   border-radius: 4px;
   transition: background-color 0.3s ease;
 }

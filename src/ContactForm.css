@@ -134,6 +134,32 @@
     border-color: #9FECCC transparent #9FECCC transparent;
     animation: lds-hourglass 1.2s infinite;
   }
+  .emoji-input-container {
+    position: relative;
+  }
+  
+  .emoji-picker-container {
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    z-index: 1;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 8px;
+  }
+  
+  .emoji-button {
+    position: absolute;
+    top: 50%;
+    right: 8px;
+    transform: translateY(-50%);
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
+  
   @keyframes lds-hourglass {
     0% {
       transform: rotate(0);
