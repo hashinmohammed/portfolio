@@ -132,7 +132,7 @@ const ContactForm = () => {
                   className="emoji-button"
                   onClick={() => setShowEmojiPicker(!showEmojiPicker)}
                 >
-                  <span role="img" aria-label="Emoji Icon">
+                  <span className='emoji' role="img" aria-label="Emoji Icon">
                     😀
                   </span>
                 </button>

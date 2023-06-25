@@ -159,6 +159,9 @@
     border: none;
     cursor: pointer;
   }
+  .emoji{
+    color: #7f7b7b;
+  }
   
   @keyframes lds-hourglass {
     0% {

@@ -73,3 +73,37 @@
     background-color: #45a049;
   }
   
+  @media (max-width: 768px) {
+    .modal-content {
+      max-width: 90%;
+    }
+    
+  }
+  
+  @media (max-width: 480px) {
+    .modal-content {
+      padding: 10px;
+      font-size: 16px;
+      max-width: 70%;
+    }
+  
+    .modal-text {
+      font-size: 18px;
+      padding: 0 10px;
+      
+    }
+  }
+  
+  @media (max-width: 320px) {
+    .modal-content {
+      padding: 5px;
+      font-size: 14px;
+      max-width: 50%;
+
+    }
+  
+    .modal-text {
+      font-size: 16px;
+      padding: 0 5px;
+    }
+  }
