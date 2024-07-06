@@ -1,6 +1,6 @@
 import React from 'react';
 import './Technologies.css';
-import { technologies } from './utils/TechnologiesDatas';
+import { technologies } from '../utils/TechnologiesDatas';
 import Tooltip from '@mui/material/Tooltip';
 
 const Technologies = () => {

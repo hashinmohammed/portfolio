@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { FiChevronLeft, FiChevronRight, FiX } from 'react-icons/fi';
-import { images } from '../src/utils/GalleryData';
+import { images } from '../utils/GalleryData';
 import './Gallery.css';
 
 const GalleryComponent = () => {

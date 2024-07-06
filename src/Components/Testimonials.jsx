@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { shortList, longList, list } from "./utils/TestimonialsData";
+import { shortList, longList, list } from "../utils/TestimonialsData";
 import { FaQuoteRight } from "react-icons/fa";
 import { FiChevronLeft, FiChevronRight } from "react-icons/fi";
 import './Testimonials.css';

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import "../src/Overlay.css";
-import myImage from "../public/assets/my-image.png";
-import { overlayData, buttonsData } from "./utils/OverlayDatas";
+import "./Overlay.css";
+import myImage from "../../public/assets/my-image.png";
+import { overlayData, buttonsData } from "../utils/OverlayDatas";
 import {
   FaInstagram,
   FaLinkedin,

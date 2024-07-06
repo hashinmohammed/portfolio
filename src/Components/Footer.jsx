@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import './Footer.css';
 
-import { socialMediaLinks, address, contactDetails } from './utils/FooterDatas';
+import { socialMediaLinks, address, contactDetails } from '../utils/FooterDatas';
 import { nanoid } from 'nanoid';
 
 const Footer = () => {
