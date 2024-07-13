@@ -13,7 +13,7 @@ const Navbar = () => {
   return (
     <nav className="navbar">
       <div className="navbar-logo">
-        ha<span style={{ color: 'yellowgreen', fontSize: '2rem' }}>sh</span>in
+        ha<span style={{ color: '#bfce3793', fontSize: '2rem' }}>sh</span>in
       </div>
       <ul className="navbar-links">
         {navbarLinks.map((link, index) => (
