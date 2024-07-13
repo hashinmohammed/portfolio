@@ -1,6 +1,6 @@
 import React from 'react';
-import './Navbar.css';
 import Tooltip from '@mui/material/Tooltip';
+import './NavBar.css';
 
 const Navbar = () => {
   const navbarLinks = [
