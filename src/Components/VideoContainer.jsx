@@ -1,9 +1,12 @@
-import { useEffect, useRef } from 'react';
+import React, { useEffect, useRef } from 'react';
+import Slider from 'react-slick';
 import './VideoContainer.css';
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
 import video from '../../public/assets/video.mp4';
 import { cardData } from '../utils/CardData';
 import Aos from 'aos';
-import 'aos/dist/aos.css'
+import 'aos/dist/aos.css';
 
 const VideoContainer = () => {
   const videoRef = useRef(null);
@@ -11,7 +14,6 @@ const VideoContainer = () => {
   useEffect(() => {
     Aos.init();
     
-    // Function to handle autoplay
     const playVideo = () => {
       if (videoRef.current) {
         videoRef.current.play().catch(error => {
@@ -20,16 +22,44 @@ const VideoContainer = () => {
       }
     };
 
-    // Play video when component mounts
     playVideo();
-
-    // Add event listener for playing video on user interaction
     document.addEventListener('touchstart', playVideo, { once: true });
 
     return () => {
       document.removeEventListener('touchstart', playVideo);
     };
   }, []);
+
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: false,
+    autoplay: true,
+    autoplaySpeed: 3000,
+  };
+
+  const renderCard = (item, index) => (
+    <div className={`card card-${index + 1}`}>
+      <h2>{item.name}</h2>
+      <div className="icon-container">
+        <svg
+          className="icon"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 24 24"
+          fill="#ffffff"
+          width="48px"
+          height="48px"
+        >
+          <path d="M0 0h24v24H0V0z" fill="none" />
+          <path d={item.iconPath} />
+        </svg>
+      </div>
+      <p>{item.description}</p>
+    </div>
+  );
 
   return (
     <div className="video-container">
@@ -50,13 +80,22 @@ const VideoContainer = () => {
       </video>
       
       <div className="cards-container">
-        {cardData.map((item, index) => (
-          <div className="card" data-aos={item.aos} key={index}>
-            <h2>{item.name}</h2>
-            <div>{item.icon}</div>
-            <p>{item.description}</p>
-          </div>
-        ))}
+        <div className="desktop-cards">
+          {cardData.map((item, index) => (
+            <div key={index} data-aos={item.aos}>
+              {renderCard(item, index)}
+            </div>
+          ))}
+        </div>
+        <div className="mobile-slider">
+          <Slider {...settings}>
+            {cardData.map((item, index) => (
+              <div key={index}>
+                {renderCard(item, index)}
+              </div>
+            ))}
+          </Slider>
+        </div>
       </div>
     </div>
   );
