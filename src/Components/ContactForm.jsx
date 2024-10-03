@@ -1,4 +1,4 @@
-import React, { useState, useRef } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import emailjs from 'emailjs-com';
 import './ContactForm.css';
 import EmojiPicker from 'emoji-picker-react';
@@ -17,6 +17,20 @@ const ContactForm = () => {
   const [showEmojiPicker, setShowEmojiPicker] = useState(false);
 
   const messageTextareaRef = useRef(null);
+  const emojiPickerRef = useRef(null);
+
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (emojiPickerRef.current && !emojiPickerRef.current.contains(event.target)) {
+        setShowEmojiPicker(false);
+      }
+    };
+
+    document.addEventListener('mousedown', handleClickOutside);
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside);
+    };
+  }, []);
 
   const handleInputChange = (e) => {
     const { name, value } = e.target;
@@ -123,7 +137,7 @@ const ContactForm = () => {
                   ref={messageTextareaRef}
                 />
                 {showEmojiPicker && (
-                  <div className="emoji-picker-container">
+                  <div className="emoji-picker-container" ref={emojiPickerRef}>
                     <EmojiPicker onEmojiClick={handleEmojiSelect} disableSearchBar />
                   </div>
                 )}
