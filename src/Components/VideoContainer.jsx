@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from 'react';
+import { useEffect, useRef } from 'react';
 import './VideoContainer.css';
 import video from '../../public/assets/video.mp4';
 import { cardData } from '../utils/CardData';

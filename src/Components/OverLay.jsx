@@ -12,24 +12,38 @@ import {
 import Tooltip from "@mui/material/Tooltip";
 
 const Overlay = () => {
-  const [tooltipText, setTooltipText] = useState(""); // State to store the tooltip text
+  const [tooltipText, setTooltipText] = useState("");
 
   const handleCallButtonClick = () => {
-    const phoneNumber = "+919947418405"; // Replace with your phone number
+    const phoneNumber = import.meta.env.VITE_PHONE_NUMBER;
     window.location.href = `tel:${phoneNumber}`;
   };
 
   const handleButtonMouseEnter = (text) => {
-    setTooltipText(text); // Update the tooltip text on button mouse enter
+    setTooltipText(text);
   };
 
   const handleButtonMouseLeave = () => {
-    setTooltipText(""); // Clear the tooltip text on button mouse leave
+    setTooltipText("");
   };
 
   const handleButtonRedirect = (url) => {
-    // Open the respective link in a new tab/window
     window.open(url, "_blank");
+  };
+
+  const renderButtonIcon = (icon) => {
+    switch (icon) {
+      case "instagram":
+        return <FaInstagram />;
+      case "linkedin":
+        return <FaLinkedin />;
+      case "github":
+        return <FaGithub />;
+      case "facebook":
+        return <FaFacebook />;
+      default:
+        return null;
+    }
   };
 
   return (
@@ -52,7 +66,7 @@ const Overlay = () => {
             {buttonsData.slice(1).map((button) => (
               <Tooltip
                 key={button.id}
-                title={tooltipText} // Set the tooltip text from state
+                title={tooltipText}
                 arrow
               >
                 <button
@@ -78,21 +92,6 @@ const Overlay = () => {
       </div>
     </div>
   );
-};
-
-const renderButtonIcon = (icon) => {
-  switch (icon) {
-    case "instagram":
-      return <FaInstagram />;
-    case "linkedin":
-      return <FaLinkedin />;
-    case "github":
-      return <FaGithub />;
-    case "facebook":
-      return <FaFacebook />;
-    default:
-      return null;
-  }
 };
 
 export default Overlay;
