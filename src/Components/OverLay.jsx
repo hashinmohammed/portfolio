@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import "./Overlay.css";
 import myImage from "../../public/assets/my-image.png";
 import { overlayData, buttonsData } from "../utils/OverlayDatas";
@@ -8,7 +8,7 @@ import {
   FaGithub,
   FaFacebook,
 } from "react-icons/fa";
-import { nanoid } from "nanoid";
+
 import Tooltip from "@mui/material/Tooltip";
 
 const Overlay = () => {
