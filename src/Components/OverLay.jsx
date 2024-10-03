@@ -1,5 +1,5 @@
 import { useState } from "react";
-import "./Overlay.css";
+import "./OverLay.css";
 import myImage from "../../public/assets/my-image.png";
 import { overlayData, buttonsData } from "../utils/OverlayDatas";
 import {
